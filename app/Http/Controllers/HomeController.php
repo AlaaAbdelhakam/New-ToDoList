@@ -58,4 +58,9 @@ class HomeController extends Controller
         ]);
         return view('welcome');
     }
+
+    public function index() 
+    {
+        return view('home.index');
+    }
 }

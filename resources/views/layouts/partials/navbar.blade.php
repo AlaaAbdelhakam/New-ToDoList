@@ -37,11 +37,12 @@
       @guest
         <div class="text-end">
           <a href="{{ route('login.perform') }}" class="btn btn-outline-light me-2">Login</a>
+              @endguest
           @role('admin')
           <a href="{{ URL::temporarySignedRoute('register.perform', now()->addMinutes(30)) }}" class="btn btn-warning">Sign-up</a>
           @endrole
         </div>
-      @endguest
+  
       
     </div>
   </div>
